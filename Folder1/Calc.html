@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Grades Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>School Grades Calculator</h1>
+        <div class="grades-form">
+            <div class="input-group">
+                <label for="grade1">Grade 1:</label>
+                <input type="number" id="grade1" min="0" max="20" step="0.1" required>
+            </div>
+            <div class="input-group">
+                <label for="grade2">Grade 2:</label>
+                <input type="number" id="grade2" min="0" max="20" step="0.1" required>
+            </div>
+            <div class="input-group">
+                <label for="grade3">Grade 3:</label>
+                <input type="number" id="grade3" min="0" max="20" step="0.1" required>
+            </div>
+            <div class="input-group">
+                <label for="grade4">Grade 4:</label>
+                <input type="number" id="grade4" min="0" max="20" step="0.1" required>
+            </div>
+            <button onclick="calculateStats()">Calculate</button>
+        </div>
+        <div class="results" id="results">
+            <div class="result-item">
+                <h3>Average Grade:</h3>
+                <p id="average">-</p>
+            </div>
+            <div class="result-item">
+                <h3>Best Grade:</h3>
+                <p id="best">-</p>
+            </div>
+            <div class="result-item">
+                <h3>Worst Grade:</h3>
+                <p id="worst">-</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
